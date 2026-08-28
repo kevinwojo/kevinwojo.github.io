@@ -1,4 +1,5 @@
 orch.py
+.orch/
 
 # Hugo build artifacts
 /public/
