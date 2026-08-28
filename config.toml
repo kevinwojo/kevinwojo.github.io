@@ -1,0 +1,34 @@
+baseURL = "https://kevinwojo.github.io/"
+languageCode = "en-us"
+title = "kwojo314"
+copyright = "Kevin Wojkovich"
+
+# Blog posts live in content/posts/ and are listed on the home page.
+paginate = 10
+
+[module]
+  # The hugo-paper theme is pulled in as a Hugo Module, so there are no
+  # vendored theme files in this repo. Run `hugo mod get -u` to update it.
+  [[module.imports]]
+    path = "github.com/nanxiaobei/hugo-paper"
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  # Shown in the header / about block.
+  name = "Kevin Wojkovich"
+  bio = "Notes on hardware, FPGAs, and whatever else I'm building."
+  # avatar = "https://avatars.githubusercontent.com/kevinwojo"
+  github = "kevinwojo"
+  monoDarkIcon = true
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
